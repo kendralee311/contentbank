@@ -2,12 +2,11 @@
 
 Personal content capture system for phygital & spatial design strategy content (see `CLAUDE.md` for the full niche/style spec and command definitions).
 
+**Data lives in Notion, not this repo.** This repo only holds the spec that tells Claude Code how to behave in a Notion-connected session.
+
 ## Usage
 
-- `log this: <raw input>` — capture a save, trend, news item, or friction as a tagged entry (idea / pattern / angle). Appends to `entries.md`.
-- `weekly review` — organizes the week's logged entries into 5 ranked ideas, 2 working patterns, and 3 timely angles. Writes to `reviews/YYYY-MM-DD.md`.
+- `log this: <raw input>` — capture a save, trend, news item, or friction as a tagged entry (Idea / Pattern / Angle). Creates a row in the Notion **Entries** database.
+- `weekly review` — organizes the week's logged entries into 5 ranked ideas, 2 working patterns, and 3 timely angles. Creates a page under **Weekly Reviews** in Notion.
 
-## Structure
-
-- `entries.md` — the raw log
-- `reviews/` — weekly review outputs
+See `CLAUDE.md` for the Notion page/database links and schema.
